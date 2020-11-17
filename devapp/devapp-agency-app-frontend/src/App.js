@@ -1,18 +1,19 @@
-import Service from './components/Service.js'
-import NavbarComponent from './components/Navbar/NavbarComponent.js';
-import AboutUs from './components/AboutUs.js';
 import logo from './Infinity-Arrow.svg';
-import ContactUs from './components/ContactUs.js';
-import './App.css';
+import Header from './components/Header.jsx';
+import Service from './components/Service.jsx';
+import About from './components/About.jsx';
+import Contact from './components/Contact.jsx';
+import Footer from './components/Footer.jsx';
 
+import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-      <NavbarComponent/>
+           <Header className="navbar"/>
       <header className="App-header">
-    
+   
         <img src={logo} className="App-logo" alt="logo" />
         <p className="Headliner">Hello, we are DevApp Agency, a digital agency for your technological needs and dreams.</p>
         <a
@@ -24,9 +25,10 @@ function App() {
           Contact Us
         </a>
       </header>
+      <About/>
       <Service/>
-      <AboutUs/>
-      <ContactUs/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

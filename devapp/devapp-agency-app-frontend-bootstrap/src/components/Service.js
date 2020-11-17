@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-class AboutUs extends React.Component{
+class Service extends React.Component{
     render(){
         return(
             <div>
-                <p>This is the About Us screen</p>
+                <p>This is the service section.</p>
             </div>
         )
     }
 }
 
-export default AboutUs;
+export default Service;

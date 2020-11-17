@@ -13,8 +13,8 @@ class NavbarComponent extends React.Component{
 
     render(){
         return(
-            <nav className="NavbarItems">
-                <h1 className="navbar-logo">React<i className="fab fa-react"></i></h1>
+            <nav className="NavbarItems "  >
+                <h1 className="navbar-logo">DevApp Agency<i className="fab fa-react"></i></h1>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
@@ -31,7 +31,7 @@ class NavbarComponent extends React.Component{
                     })}
                    
                 </ul>
-                <Button>Sign Up</Button>
+                <Button>Contact Us</Button>
             </nav>
             
         )

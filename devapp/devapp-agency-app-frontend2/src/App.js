@@ -1,18 +1,15 @@
-import Service from './components/Service.js'
-import NavbarComponent from './components/Navbar/NavbarComponent.js';
-import AboutUs from './components/AboutUs.js';
 import logo from './Infinity-Arrow.svg';
-import ContactUs from './components/ContactUs.js';
-import './App.css';
 
+import './App.css';
+import Navbar from './components/Navbar.js';
 
 
 function App() {
   return (
     <div className="App">
-      <NavbarComponent/>
+      <Navbar/>
       <header className="App-header">
-    
+   
         <img src={logo} className="App-logo" alt="logo" />
         <p className="Headliner">Hello, we are DevApp Agency, a digital agency for your technological needs and dreams.</p>
         <a
@@ -24,9 +21,7 @@ function App() {
           Contact Us
         </a>
       </header>
-      <Service/>
-      <AboutUs/>
-      <ContactUs/>
+
     </div>
   );
 }
